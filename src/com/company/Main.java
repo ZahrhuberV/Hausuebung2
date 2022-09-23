@@ -21,5 +21,6 @@ public class Main {
             return (n + "").equals(reverse);
 
         });
+        numberTester.testFile();
     }
 }
