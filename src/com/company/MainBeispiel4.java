@@ -19,6 +19,9 @@ public class MainBeispiel4 {
 
         do{
             inputCalc = menu1(s);
+            if(inputCalc.equals("4")){
+                return;
+            }
 
             System.out.print("Enter number x a>");
             xa = s.nextDouble();
