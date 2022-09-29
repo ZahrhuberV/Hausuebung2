@@ -22,6 +22,6 @@ public class Number {
 
     @Override
     public String toString() {
-        return "Solution: a = " + a  + " b = " + b;
+        return " ----------------  \n Solution: \n a = " + a  + " b = " + b + "\n ----------------";
     }
 }

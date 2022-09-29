@@ -127,16 +127,16 @@ public class MainBeispiel4 {
             return number;
         };
         CalculationOperation multiply = (n,m)->{
-            double number1 = n.getA() * m.getB();
-            double number2 = m.getA()* n.getB();
+            double number1 = n.getA() * m.getA();
+            double number2 = m.getB()* n.getB();
             Number number = new Number();
             number.setA(number1);
             number.setB(number2);
             return number;
         };
         CalculationOperation divide = (n,m)->{
-            double number1 = n.getA() * n.getB();
-            double number2 = m.getA() * m.getB();
+            double number1 = n.getA() / m.getA();
+            double number2 = m.getB() / n.getB();
             Number number = new Number();
             number.setA(number1);
             number.setB(number2);
@@ -163,10 +163,20 @@ public class MainBeispiel4 {
             return number;
         };
         CalculationOperation multiply = (n,m)->{
-            return null;
+            double number1 = n.getA() * m.getB();
+            double number2 = m.getA() * n.getB();
+            Number number = new Number();
+            number.setA(number1);
+            number.setB(number2);
+            return number;
         };
         CalculationOperation divide = (n,m)->{
-            return null;
+            double number1 = n.getA() * n.getB();
+            double number2 = m.getA() * m.getB();
+            Number number = new Number();
+            number.setA(number1);
+            number.setB(number2);
+            return number;
         };
         VectorCalculator vectorCalculator = new VectorCalculator(add, subtract, multiply, divide);
         return vectorCalculator;
