@@ -4,7 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         NumberTester numberTester = new NumberTester("test.txt");
-
         numberTester.setOddEvenTester((n) -> (n % 2) == 0);
         numberTester.setPrimeTester((n) -> {
             if (n <= 1)
