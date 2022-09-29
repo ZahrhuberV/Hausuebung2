@@ -174,8 +174,8 @@ public class MainBeispiel4 {
             return number;
         };
         CalculationOperation divide = (n,m)->{
-            double number1 = n.getA() * n.getB();
-            double number2 = m.getA() * m.getB();
+            double number1 = n.getA() * m.getB();
+            double number2 = m.getA() * n.getB();
             Number number = new Number();
             number.setA(number1);
             number.setB(number2);
